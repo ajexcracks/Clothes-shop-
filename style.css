@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: #1a1a1a;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: #0f0f0f;
+    border-bottom: 2px solid #d4af37;
+}
+
+.logo {
+    font-size: 2em;
+    font-weight: bold;
+    color: #d4af37;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #d4af37;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3') no-repeat center/cover;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.cta {
+    padding: 15px 30px;
+    background: #d4af37;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.cta:hover {
+    background: #b8972e;
+}
+
+.products {
+    padding: 50px;
+    text-align: center;
+}
+
+.products h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #d4af37;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background: #2a2a2a;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product-card h3 {
+    margin: 15px 0;
+    color: #d4af37;
+}
+
+.product-card p {
+    color: #ccc;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #0f0f0f;
+    border-top: 2px solid #d4af37;
+}
+
+.admin-panel {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #2a2a2a;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.admin-panel h2 {
+    color: #d4af37;
+    margin-bottom: 20px;
+}
+
+.admin-panel input, .admin-panel button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.admin-panel input {
+    background: #3a3a3a;
+    color: #fff;
+}
+
+.admin-panel button {
+    background: #d4af37;
+    color: #000;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.admin-panel button:hover {
+    background: #b8972e;
+}
